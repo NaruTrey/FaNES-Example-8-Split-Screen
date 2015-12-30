@@ -30,8 +30,8 @@ int main(void) {
     newSprite(sprite0X + 4, sprite0Y - 4, 0x1D, NULL, 4);
     onGraphics();
     while(TRUE) {
-        uchar padPo = padPool(PAD_PORT_PLAYER_1);
-        uchar padPu = padPush(PAD_PORT_PLAYER_1);
+        uchar padPo = padPool(PAD_PORT_1);
+        uchar padPu = padPush(PAD_PORT_1);
         if (padPo) {
             if(padPu & PAD_BUTTON_SELECT) {
                 ++select;
